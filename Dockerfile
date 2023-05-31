@@ -12,6 +12,7 @@ COPY . .
 RUN npm install
 # Instalando no sistema o módulo do nodemon
 RUN npm i -g nodemon
-# Declaração das portas usadas no projeto
+# Declaração da porta de comunicação usada no projeto
 EXPOSE 5050
+# Executar o comando de nodemon index.js quando o container subir
 CMD ["nodemon","index.js"]
